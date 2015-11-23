@@ -33,6 +33,9 @@ module.exports = function semistandardLoader (text) {
     }, []);
 
     self.emitWarning(warnings.join('\n'));
+    if (warnings.length) {
+      throw new Error('Semistandard lint failure. Cancelling build/test run.')
+    }
     callback(err, text);
   });
 };

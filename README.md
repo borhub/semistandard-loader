@@ -2,6 +2,8 @@
 
 webpack loader for linting your code with [Flet/semistandard](https://github.com/Flet/semistandard)
 
+*This quickly hacked fork throws an error when a lint warning is encountered.*
+
 ## Usage
 
 ```js
